@@ -21,8 +21,6 @@ const StateMachine = () => {
       reader.onload = function (e) {
         var content = reader.result;
         createOutString(content);
-        //Here the content has been read successfuly
-        //alert(content);
       };
 
       reader.readAsText(file);
@@ -63,8 +61,6 @@ const StateMachine = () => {
 
     setOutString(preOutString);
   };
-
-  console.log(outString);
 
   return (
     <>
